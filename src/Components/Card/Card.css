@@ -1,0 +1,15 @@
+.main-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.card-title{
+    font-size: medium;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+.card-image img{
+    width: 20%;
+    margin-bottom: 5rem;
+}
