@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-key */
 /* eslint-disable no-unused-vars */
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
 import './Main.css'
 import Header from '../Header/Header'
 import Card from '../Card/Card';
@@ -31,14 +32,17 @@ function Main() {
       <div className='grid-main'>
         {products.map((item) => (
           <div className='grid-item' >
-            <Card title={item.title}
-              image={item.image}
-              price={item.price}
-            />
+            <Link to={`detalle/${item.id}`}>
+              <Card title={item.title}
+                image={item.image}
+                price={item.price}
+              />
+            </Link>
           </div>
         ))}
       </div>
     </div>
+
   )
 }
 
