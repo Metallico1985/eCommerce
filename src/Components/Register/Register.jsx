@@ -36,16 +36,18 @@ function FormRegistro() {
             })
     };
     return (
-        <div className='registerMain'>
-            <form onSubmit={handleSubmit} action="">
+        <div className='flex content-center justify-center h-screen'>
+        <div className='flex flex-col gap-3 text-center content-center justify-center  '>
+            <form className='flex flex-col text-center gap-8 justify-center rounded shadow-lg p-20 bg-teal-400' onSubmit={handleSubmit} action="">
                 <h2>Registro nuevo usuario</h2>
-                <input type="text" required placeholder="Nombre" onChange={handleNombre} maxLength='20' />
-                <input type="text" required placeholder="Apellido" onChange={handleApellido} maxLength='20' />
-                <input type="text" placeholder='Tipo usuario' onChange={handleTipo} />
-                <input type="email" required onChange={handleMail} placeholder='Email' />
-                <input type="password" required onChange={handlePass} placeholder='Password' minLength='8' />
-                <button type='submit'>Submit</button>
+                <input className='rounded p-1' type="text" required placeholder="Nombre" onChange={handleNombre} maxLength='20' />
+                <input className='rounded p-1' type="text" required placeholder="Apellido" onChange={handleApellido} maxLength='20' />
+                <input className='rounded p-1' type="text" placeholder='Tipo usuario' onChange={handleTipo} />
+                <input className='rounded p-1' type="email" required onChange={handleMail} placeholder='Email' />
+                <input className='rounded p-1' type="password" required onChange={handlePass} placeholder='Password' minLength='8' />
+                <button className='rounded ' type='submit'>Submit</button>
             </form>
+        </div>
         </div>
     )
 }

@@ -2,7 +2,7 @@
 /* eslint-disable no-unused-vars */
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
-import './Main.css'
+// import './Main.css'
 import Header from '../Header/Header'
 import Card from '../Card/Card';
 import SearchBar from './SearchBar/SearchBar';
@@ -26,19 +26,19 @@ function Main() {
   }, []);
 
   return (
-    <div className='main-container'>
-      <Header />
+    <div className=''>
+      <Header /> 
       <SearchBar />
-      <div className='grid-main'>
+      <div className=' grid grid-cols-4 gap-12 place-items-center p-44 text-center'>
         {products.map((item) => (
-          <div className='grid-item' >
+          <> 
             <Link to={`detalle/${item.id}`}>
               <Card title={item.title}
                 image={item.image}
                 price={item.price}
               />
             </Link>
-          </div>
+          </>
         ))}
       </div>
     </div>

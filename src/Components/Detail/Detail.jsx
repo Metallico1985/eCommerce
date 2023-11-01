@@ -5,7 +5,7 @@ import { useParams } from 'react-router-dom'
 function Detail() {
     const {id} = useParams();
   return (
-    <div className='main-detail'>
+    <div className=''>
         
     </div>
   )

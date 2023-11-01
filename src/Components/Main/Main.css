@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-.main-container {
+/* .main-container {
   width: 100vw;
   height: 100vh
 
@@ -26,4 +26,4 @@
 .grid-item:hover{
     transform: scale(1.1);
     transition: ease-out 1.5s;
-}
+} */

@@ -7,7 +7,7 @@ import Login from './Components/Login/Login'
 import Contact from './Components/Contact/Contact'
 import Detail from './Components/Detail/Detail'
 import Cart from './Components/Cart/Cart';
-
+import '/main.css'
 
 const router = createBrowserRouter([
   {
