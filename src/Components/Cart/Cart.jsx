@@ -2,7 +2,7 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
 import { useContext } from 'react'
-import { CartContext } from '../../Contexts/Cart'
+import { CartContext } from '../../Contexts/cartContext'
 import Header from '../Header/Header'
 
 function Cart() {

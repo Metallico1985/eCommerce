@@ -3,7 +3,7 @@ import React from 'react'
 import { useParams } from 'react-router-dom'
 import { useState, useEffect , useContext} from 'react';
 import Header from '../Header/Header'
-import { CartContext } from '../../Contexts/Cart'
+import { CartContext } from '../../Contexts/cartContext'
 
 
 function Detail() {
