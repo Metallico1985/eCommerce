@@ -40,11 +40,15 @@ function Login() {
                     <h2>Iniciar sesión</h2>
                     <input className='rounded p-1' type="email" required onChange={handleMail} placeholder='Email' maxLength='25' />
                     <input className='rounded p-1' type="password" required onChange={handlePass} placeholder='Password' minLength="8" />
-                    <button className='rounded ' type='submit'>Submit</button>
+                    <button className='hover:text-white hover:bg-black rounded-lg p-2' type='submit'>Submit</button>
                 </form>
                 <div>
                     <h3>No estas registrado?</h3>
-                    <Link to={'/registro'}>Registrate!</Link>
+                    <button
+                        className='hover:text-white hover:bg-black rounded-lg p-2 mt-4'
+                        onClick={() => navigate('/registro')} >
+                        Registrate
+                    </button>
                 </div>
             </div>
         </div>

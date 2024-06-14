@@ -1,11 +1,11 @@
 /* eslint-disable react/jsx-key */
 /* eslint-disable no-unused-vars */
-import { useEffect, useState } from 'react'
+import { useEffect, useState,} from 'react'
 import { Link } from 'react-router-dom';
-// import './Main.css'
 import Header from '../Header/Header'
 import Card from '../Card/Card';
 import SearchBar from './SearchBar/SearchBar';
+
 
 function Main() {
 
@@ -26,6 +26,7 @@ function Main() {
   }, []);
 
   return (
+    
     <div className=''>
       <Header /> 
       <SearchBar />

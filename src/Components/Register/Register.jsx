@@ -3,7 +3,6 @@ import React from 'react'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { register } from '../../API/Rule_auth'
-import './Register.css'
 
 function FormRegistro() {
 
@@ -45,7 +44,7 @@ function FormRegistro() {
                 <input className='rounded p-1' type="text" placeholder='Tipo usuario' onChange={handleTipo} />
                 <input className='rounded p-1' type="email" required onChange={handleMail} placeholder='Email' />
                 <input className='rounded p-1' type="password" required onChange={handlePass} placeholder='Password' minLength='8' />
-                <button className='rounded ' type='submit'>Submit</button>
+                <button className='hover:text-white hover:bg-black rounded-lg p-2 ' type='submit'>Submit</button>
             </form>
         </div>
         </div>
